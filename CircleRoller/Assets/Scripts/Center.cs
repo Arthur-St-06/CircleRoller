@@ -1,12 +1,37 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class Center : MonoBehaviour
 {
-    public float RotationSpeed;
-    public Joystick Joystick;
+    private static float _circleRotation;
 
-    void Update()
+    public static float CircleRotation
     {
-        transform.Rotate(Vector3.back * Joystick.GetRemappedOffset() * Time.deltaTime * RotationSpeed);
+        get { return _circleRotation; }
+        set { _circleRotation = value; }
     }
+
+    private static float _rotationSpeed;
+
+   public static float RotationSpeed
+    {
+        get { return _rotationSpeed; }
+        set { _rotationSpeed = value; }
+    }
+
+   private float _phoneRotation;
+
+   void Update()
+   {
+       _circleRotation = transform.rotation.eulerAngles.z;
+
+       _phoneRotation = Input.acceleration.x * _rotationSpeed;
+
+       transform.Rotate(0, 0, -_phoneRotation);
+    }
+
+   public float phoneRotation()
+   {
+       return _phoneRotation;
+   }
 }

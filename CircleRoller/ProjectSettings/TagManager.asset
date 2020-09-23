@@ -5,6 +5,32 @@ TagManager:
   serializedVersion: 2
   tags:
   - Laser
+  - LaserSpawnerInGame
+  - LaserSpawnerInMenu
+  - LevelManager
+  - NumberText
+  - LevelReachedText
+  - Audio
+  - LevelLoader
+  - SettingsInMenu
+  - InfinityLevelButton
+  - InfinityScoreLogic
+  - SimpleLevelButton
+  - SettingsInSimpleChooseLevel
+  - SettingsInInfinityChooseLevel
+  - SettingsInChooseRegimeScene
+  - BackArrowInChoseLevelScene
+  - BackArrowInChooseRegimeScene
+  - CircleRollerManager
+  - InfinityCircleRollerManager
+  - BackArrowInSimpleCircleRoller
+  - BackArrowInInfinityCircleRoller
+  - SettingsInCircleRoller
+  - SettingsInInfinityCircleRoller
+  - SettingsInCircleRollerCopy
+  - SettingsInInfinityCircleRollerCopy
+  - BackArrowInSimpleCircleRollerCopy
+  - BackArrowInInfinityCircleRollerCopy
   layers:
   - Default
   - TransparentFX
@@ -14,7 +40,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - PostProcessing
   - 
   - 
   - 
