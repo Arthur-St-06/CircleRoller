@@ -1,6 +1,6 @@
 # CircleRoller
 
-Android game.
+An Android game where you have to rotate your phone to move a circle to avoid lasers.
 
 There are two regimes in the game: simple and infinity. 
 - In the simple regime you need to avoid a fixed number of lasers. 
